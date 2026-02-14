@@ -34,24 +34,21 @@ const Footer = ({ darkMode }) => {
           {/* Social Icons */}
           <div className="flex gap-4">
             <a
-              href="#"
+              href="https://github.com/carlosalberto05"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-10 h-10 rounded-full flex items-center justify-center hover:scale-110 transition-all hover:bg-linear-to-r hover:from-orange-500 hover:to-amber-500 hover:text-white bg-[#374151] dark:bg-[#f3f4f6] text-white dark:text-[#374151]"
             >
               <FaGithub />
             </a>
 
             <a
-              href="#"
+              href="https://linkedin.com/in/carlos-alberto-lira"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-10 h-10 rounded-full flex items-center justify-center hover:scale-110 transition-all hover:bg-linear-to-r hover:from-orange-500 hover:to-amber-500 hover:text-white bg-[#374151] dark:bg-[#f3f4f6] text-white dark:text-[#374151]"
             >
               <FaLinkedin />
-            </a>
-
-            <a
-              href="#"
-              className="w-10 h-10 rounded-full flex items-center justify-center hover:scale-110 transition-all hover:bg-linear-to-r hover:from-orange-500 hover:to-amber-500 hover:text-white bg-[#374151] dark:bg-[#f3f4f6] text-white dark:text-[#374151]"
-            >
-              <FaTwitter />
             </a>
           </div>
 
@@ -62,7 +59,7 @@ const Footer = ({ darkMode }) => {
               <FaHeart className="text-red-500" />
               by
               <span className="mt-1 text-[#f97316]">
-                OualiCode
+                Carlos Alberto
               </span>
             </p>
           </div>

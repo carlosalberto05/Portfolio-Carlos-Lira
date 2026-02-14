@@ -51,16 +51,16 @@ const About = ({ darkMode }) => {
             data-aos="fade-up"
             data-aos-delay="500"
           >
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore
-            suscipit expedita blanditiis temporibus nostrum nulla fugit
-            consequuntur! Ullam earum perspiciatis sit ea, asperiores dolorum
-            illum temporibus quidem? Iusto, officia mollitia!
+            Self-taught and oriented to solving real-world problems. I have a unique background in 
+            Communications and Electronics Engineering (IPN), which gives me a strong foundation in 
+            systems thinking. I have contributed to large-scale platforms like "Mi Cuenta Infonavit", 
+            impacting over 16 million users.
           </p>
 
           <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 lg:gap-8 mb-6 sm:mb-8">
             <div className="text-center" data-aos="zoom-in" data-aos-delay="600">
               <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-orange-400">
-                5+
+                IPN
               </div>
               <div
                 className={`text-xs sm:text-sm lg:text-base ${
@@ -73,27 +73,27 @@ const About = ({ darkMode }) => {
 
             <div className="text-center" data-aos="zoom-in" data-aos-delay="650">
               <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-orange-400">
-                10+
+                3+
               </div>
               <div
                 className={`text-xs sm:text-sm lg:text-base ${
                   darkMode ? 'text-gray-300' : 'text-gray-600'
                 }`}
               >
-                Years Experience
+                Years Exp.
               </div>
             </div>
 
             <div className="text-center" data-aos="zoom-in" data-aos-delay="700">
               <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-orange-400">
-                100+
+                5k+
               </div>
               <div
                 className={`text-xs sm:text-sm lg:text-base ${
                   darkMode ? 'text-gray-300' : 'text-gray-600'
                 }`}
               >
-                Projects Completed
+                Students
               </div>
             </div>
           </div>

@@ -9,10 +9,10 @@ import { DownloadIcon, Mail } from 'lucide-react'
 
 const Hero = ({ darkMode }) => {
   const socialIcons = [
-    { icon: instagram, alt: 'Instagram' },
-    { icon: tiktok, alt: 'tiktok' },
-    { icon: github, alt: 'github' },
-    { icon: youtube, alt: 'youtube' },
+    { icon: github, alt: 'github', link: 'https://github.com/carlosalberto05' },
+    { icon: instagram, alt: 'Instagram', link: '#' },
+    { icon: tiktok, alt: 'tiktok', link: '#' },
+    { icon: youtube, alt: 'youtube', link: 'https://youtube.com/@carloslira' },
   ]
 
   const darkTheme = {
@@ -53,8 +53,9 @@ const Hero = ({ darkMode }) => {
               {socialIcons.map((social, index) => (
                 <a
                   key={index}
-                  href="#"
+                  href={social.link}
                   target="_blank"
+                  rel="noopener noreferrer"
                   data-aos-delay={`${400 + index * 100}`}
                   className="transform hover:scale-110 transition-transform duration-300"
                 >
@@ -74,7 +75,7 @@ const Hero = ({ darkMode }) => {
               data-aos="fade-up"
               data-aos-delay="500"
             >
-              Hi, I'm OualiCode
+              Hi, I'm Carlos Alberto
             </h1>
 
             <p
@@ -82,10 +83,9 @@ const Hero = ({ darkMode }) => {
               data-aos="fade-up"
               data-aos-dela="600"
             >
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Facilis et harum dolorem sit minus illo nostrum? Tempore,
-              nobis. Recusandae neque exercitationem voluptates tempore
-              tempora sequi
+              I'm a Full Stack Developer with over 3 years of hands-on experience in the JavaScript ecosystem. 
+              I specialize in building clear interfaces, solid performance, and applications that scale 
+              securely for millions of users.
             </p>
 
             {/* Buttons */}

@@ -10,45 +10,45 @@ const Projects = ({ darkMode }) => {
   const projects = [
     {
       id: 1,
-      title: 'E-Commerce Platform',
-      desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+      title: 'Mi Cuenta Infonavit',
+      desc: 'Frontend development for a platform serving over 16 million users. Critical bug resolution and performance optimization.',
       image: project1,
-      tags: ['React', 'Node.js', 'MongoDB'],
+      tags: ['React', 'TypeScript', 'Node.js', 'REST API'],
     },
     {
       id: 2,
-      title: 'Fitness Tracker App',
-      desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+      title: 'JavaScript for Beginners',
+      desc: 'Udemy course creator with over 500 active students, teaching programming fundamentals and logic.',
       image: project2,
-      tags: ['React Native', 'Firebase'],
+      tags: ['Education', 'JavaScript', 'Logic'],
     },
     {
       id: 3,
-      title: 'Content Generator',
-      desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+      title: 'Corporate Websites',
+      desc: 'Development of multiple professional landing pages and corporate sites using WordPress and Elementor.',
       image: project3,
-      tags: ['Python', 'openAI'],
+      tags: ['WordPress', 'Elementor', 'Web Design'],
     },
     {
       id: 4,
-      title: 'Dashboard',
-      desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+      title: 'No-Code Automations',
+      desc: 'Implementation of efficient workflows and integrations using Make (Integromat), Zapier, and APIs.',
       image: project4,
-      tags: ['Vue.js', 'Chart.js'],
+      tags: ['Make', 'Zapier', 'APIs'],
     },
     {
       id: 5,
-      title: 'Task Management',
-      desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+      title: 'Technology Workshops',
+      desc: 'Tutoring in digital literacy and Linux installation for underserved youth in Huesca, Spain.',
       image: project5,
-      tags: ['Laravel', 'Vue.js'],
+      tags: ['Mentoring', 'Linux', 'Social Impact'],
     },
     {
       id: 6,
-      title: 'Lorem ipsum dolor',
-      desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+      title: 'Full Stack Content',
+      desc: '7-hour full-stack authentication tutorial that reached 5,000+ developers on YouTube.',
       image: project6,
-      tags: ['Next.js', 'Three.js'],
+      tags: ['Content Creation', 'React', 'Full Stack'],
     },
   ]
 
@@ -81,7 +81,7 @@ const Projects = ({ darkMode }) => {
             className="max-w-xl mx-auto"
             style={{ color: darkMode ? '#d1d5db' : '#6b7280' }}
           >
-            A showcase of my recent work
+            A showcase of my recent work and high-impact contributions.
           </p>
         </div>
 
@@ -182,7 +182,7 @@ const Projects = ({ darkMode }) => {
             data-aos-delay="400"
           >
             <FaGithub />
-            <span>View All Ptojects</span>
+            <span>View All Projects</span>
             <FaExternalLinkAlt className="text-sm" />
           </a>
         </div>

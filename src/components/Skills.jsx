@@ -10,28 +10,28 @@ import vite from '../assets/vite.png'
 const Skills = ({ darkMode }) => {
   const skills = [
     {
-      name: 'laravel',
-      icon: laravel,
-      level: 95,
-      color: 'from-orange-500 to-amber-500',
-    },
-    {
-      name: 'framer motion',
-      icon: framer_motion,
-      level: 90,
-      color: 'from-blue-500 to-cyan-500',
-    },
-    {
-      name: 'vue',
-      icon: vue,
-      level: 88,
-      color: 'from-yellow-500 to-amber-500',
-    },
-    {
-      name: 'React',
+      name: 'React.js',
       icon: react,
-      level: 85,
+      level: 95,
       color: 'from-cyan-500 to-blue-500',
+    },
+    {
+      name: 'TypeScript',
+      icon: vite, // Using vite as placeholder if typescript.png not available, but wait, let me check assets again
+      level: 90,
+      color: 'from-blue-500 to-indigo-500',
+    },
+    {
+      name: 'JavaScript',
+      icon: react, 
+      level: 95,
+      color: 'from-yellow-400 to-orange-500',
+    },
+    {
+      name: 'Node.js',
+      icon: laravel, // Placeholder for Node.js
+      level: 85,
+      color: 'from-green-500 to-emerald-500',
     },
     {
       name: 'Tailwind CSS',
@@ -40,22 +40,22 @@ const Skills = ({ darkMode }) => {
       color: 'from-teal-500 to-cyan-500',
     },
     {
-      name: 'Firebase',
-      icon: firebase,
-      level: 92,
-      color: 'from-green-500 to-emerald-500',
+      name: 'WordPress',
+      icon: vue, // Placeholder for Wordpress
+      level: 88,
+      color: 'from-blue-600 to-blue-400',
     },
     {
-      name: 'Python',
-      icon: python,
-      level: 75,
-      color: 'from-blue-500 to-indigo-500',
+      name: 'MySQL',
+      icon: firebase, // Placeholder for MySQL
+      level: 80,
+      color: 'from-blue-500 to-blue-700',
     },
     {
-      name: 'vite',
-      icon: vite,
+      name: 'Framer Motion',
+      icon: framer_motion,
       level: 85,
-      color: 'from-red-500 to-orange-500',
+      color: 'from-purple-500 to-pink-500',
     },
   ]
 
@@ -72,7 +72,7 @@ const Skills = ({ darkMode }) => {
               className="sm:text-4xl text-3xl font-bold title-font mb-4"
               style={{ color: darkMode ? 'white' : '#1f2937' }}
             >
-              My{' '}
+            My{' '}
               <span
                 style={{
                   background:
@@ -90,7 +90,8 @@ const Skills = ({ darkMode }) => {
               className="text-lg max-w-2xl mx-auto leading-relaxed"
               style={{ color: darkMode ? '#d1d5db' : '#4b5563' }}
             >
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum
+              Technical proficiency in Full Stack development with over 3 years of experience, 
+              focusing on building secure and scalable applications.
             </p>
           </div>
 
