@@ -1,41 +1,53 @@
-import instagram from '../assets/instagram.png'
-import tiktok from '../assets/tiktok.png'
-import github from '../assets/github.png'
-import youtube from '../assets/youtube.png'
-import hero from '../assets/hero.png'
-import hi from '../assets/hi.png'
-import CV from '../assets/CV.pdf'
-import { DownloadIcon, Mail } from 'lucide-react'
+import instagram from "../assets/instagram.png";
+import tiktok from "../assets/tiktok.png";
+import github from "../assets/github.png";
+import youtube from "../assets/youtube.png";
+import hero from "../assets/hero.png";
+import hi from "../assets/hi.png";
+import CV from "../assets/CV.pdf";
+import { DownloadIcon, Mail } from "lucide-react";
 
 const Hero = ({ darkMode }) => {
   const socialIcons = [
-    { icon: github, alt: 'github', link: 'https://github.com/carlosalberto05' },
-    { icon: instagram, alt: 'Instagram', link: '#' },
-    { icon: tiktok, alt: 'tiktok', link: '#' },
-    { icon: youtube, alt: 'youtube', link: 'https://youtube.com/@carloslira' },
-  ]
+    { icon: github, alt: "github", link: "https://github.com/carlosalberto05" },
+    {
+      icon: instagram,
+      alt: "Instagram",
+      link: "https://www.instagram.com/carlos_alberto_lir/",
+    },
+    {
+      icon: tiktok,
+      alt: "tiktok",
+      link: "https://www.tiktok.com/@carlos.alberto.lir",
+    },
+    {
+      icon: youtube,
+      alt: "youtube",
+      link: "https://www.youtube.com/@CarlosAlberto-cx5cf",
+    },
+  ];
 
   const darkTheme = {
-    textPrimary: 'text-white',
-    textSecondary: 'text-gray-300',
+    textPrimary: "text-white",
+    textSecondary: "text-gray-300",
     buttonSecondary: `
       text-white border-2 border-orange-500 
       hover:bg-orange-600
     `,
-    decorativeCircle: 'bg-orange-500 opacity-10',
-  }
+    decorativeCircle: "bg-orange-500 opacity-10",
+  };
 
   const lightTheme = {
-    textPrimary: 'text-gray-900',
-    textSecondary: 'text-gray-700',
+    textPrimary: "text-gray-900",
+    textSecondary: "text-gray-700",
     buttonSecondary: `
       text-gray-800 border-2 border-orange-500 
       hover:bg-orange-500 hover:text-white
     `,
-    decorativeCircle: 'bg-orange-400 opacity-20',
-  }
+    decorativeCircle: "bg-orange-400 opacity-20",
+  };
 
-  const theme = darkMode ? darkTheme : lightTheme
+  const theme = darkMode ? darkTheme : lightTheme;
 
   return (
     <div className="relative overflow-hidden min-h-screen flex flex-col">
@@ -63,7 +75,7 @@ const Hero = ({ darkMode }) => {
                     src={social.icon}
                     alt={social.alt}
                     className={`w-8 h-8 sm:w-10 sm:h-10 object-contain ${
-                      darkMode ? '' : 'filter brightness-75'
+                      darkMode ? "" : "filter brightness-75"
                     }`}
                   />
                 </a>
@@ -83,8 +95,9 @@ const Hero = ({ darkMode }) => {
               data-aos="fade-up"
               data-aos-dela="600"
             >
-              I'm a Full Stack Developer with over 3 years of hands-on experience in the JavaScript ecosystem. 
-              I specialize in building clear interfaces, solid performance, and applications that scale 
+              I'm a Full Stack Developer with over 3 years of hands-on
+              experience in the JavaScript ecosystem. I specialize in building
+              clear interfaces, solid performance, and applications that scale
               securely for millions of users.
             </p>
 
@@ -96,9 +109,7 @@ const Hero = ({ darkMode }) => {
                 data-aos-delay="700"
               >
                 <a href={CV} download className="w-full sm:w-auto">
-                  <button
-                    className="w-full sm:w-auto inline-flex items-center justify-center text-white bg-linear-to-r from-orange-500 to-amber-500 border-0 py-3 px-6 sm:px-8 hover:shadow-[0_0_40px_rgb(255,165,0,0.7)] rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform"
-                  >
+                  <button className="w-full sm:w-auto inline-flex items-center justify-center text-white bg-linear-to-r from-orange-500 to-amber-500 border-0 py-3 px-6 sm:px-8 hover:shadow-[0_0_40px_rgb(255,165,0,0.7)] rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform">
                     <DownloadIcon className="w-4 h-4 sm:h-5 sm:w-5 mr-2" />
                     Download CV
                   </button>
@@ -146,7 +157,7 @@ const Hero = ({ darkMode }) => {
         />
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
