@@ -1,4 +1,4 @@
-import about from '../assets/about.png'
+import about from "../assets/about2.png";
 
 const About = ({ darkMode }) => {
   return (
@@ -46,51 +46,64 @@ const About = ({ darkMode }) => {
 
           <p
             className={`text-sm sm:text-base lg:text-lg xl:text-xl mb-6 sm:mb-8 leading-relaxed bg-linear-to-r from-orange-900/10 to-orange-900/5 p-4 sm:p-6 rounded-xl sm:rounded-2xl backdrop-blur-sm ${
-              darkMode ? 'text-gray-300' : 'text-gray-700'
+              darkMode ? "text-gray-300" : "text-gray-700"
             }`}
             data-aos="fade-up"
             data-aos-delay="500"
           >
-            Self-taught and oriented to solving real-world problems. I have a unique background in 
-            Communications and Electronics Engineering (IPN), which gives me a strong foundation in 
-            systems thinking. I have contributed to large-scale platforms like "Mi Cuenta Infonavit", 
-            impacting over 16 million users.
+            Self-taught and oriented to solving real-world problems. I have a
+            unique background in Communications and Electronics Engineering
+            (IPN), which gives me a strong foundation in systems thinking. I
+            have contributed to large-scale platforms like "Mi Cuenta
+            Infonavit", impacting over 16 million users.
           </p>
 
           <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 lg:gap-8 mb-6 sm:mb-8">
-            <div className="text-center" data-aos="zoom-in" data-aos-delay="600">
+            <div
+              className="text-center"
+              data-aos="zoom-in"
+              data-aos-delay="600"
+            >
               <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-orange-400">
                 IPN
               </div>
               <div
                 className={`text-xs sm:text-sm lg:text-base ${
-                  darkMode ? 'text-gray-300' : 'text-gray-600'
+                  darkMode ? "text-gray-300" : "text-gray-600"
                 }`}
               >
                 Education
               </div>
             </div>
 
-            <div className="text-center" data-aos="zoom-in" data-aos-delay="650">
+            <div
+              className="text-center"
+              data-aos="zoom-in"
+              data-aos-delay="650"
+            >
               <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-orange-400">
                 3+
               </div>
               <div
                 className={`text-xs sm:text-sm lg:text-base ${
-                  darkMode ? 'text-gray-300' : 'text-gray-600'
+                  darkMode ? "text-gray-300" : "text-gray-600"
                 }`}
               >
                 Years Exp.
               </div>
             </div>
 
-            <div className="text-center" data-aos="zoom-in" data-aos-delay="700">
+            <div
+              className="text-center"
+              data-aos="zoom-in"
+              data-aos-delay="700"
+            >
               <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-orange-400">
                 5k+
               </div>
               <div
                 className={`text-xs sm:text-sm lg:text-base ${
-                  darkMode ? 'text-gray-300' : 'text-gray-600'
+                  darkMode ? "text-gray-300" : "text-gray-600"
                 }`}
               >
                 Students
@@ -101,8 +114,8 @@ const About = ({ darkMode }) => {
           <button
             className={`w-full sm:w-auto border-2 border-orange-500 inline-flex items-center justify-center py-2 px-4 sm:px-6 hover:shadow-[0_0_40px_rgb(255,165,0,0.7)] rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform ${
               darkMode
-                ? 'text-white bg-orange-500/10'
-                : 'text-gray-800 bg-white/90'
+                ? "text-white bg-orange-500/10"
+                : "text-gray-800 bg-white/90"
             }`}
             data-aos="fade-up"
             data-aos-delay="800"
@@ -112,7 +125,7 @@ const About = ({ darkMode }) => {
         </article>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;

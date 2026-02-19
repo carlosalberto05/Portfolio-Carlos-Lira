@@ -1,76 +1,86 @@
-import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa'
-import project1 from '../assets/project1.png'
-import project2 from '../assets/project2.png'
-import project3 from '../assets/project3.png'
-import project4 from '../assets/project4.png'
-import project5 from '../assets/project5.png'
-import project6 from '../assets/project6.png'
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import project1 from "../assets/project1.png";
+import project2 from "../assets/project2.png";
+import project3 from "../assets/project3.png";
+import project4 from "../assets/project4.png";
+import project5 from "../assets/project5.png";
+import project6 from "../assets/project6.png";
 
 const Projects = ({ darkMode }) => {
   const projects = [
     {
       id: 1,
-      title: 'Mi Cuenta Infonavit',
-      desc: 'Frontend development for a platform serving over 16 million users. Critical bug resolution and performance optimization.',
+      title: "Mi Cuenta Infonavit",
+      desc: "Frontend development for a platform serving over 16 million users. Critical bug resolution and performance optimization.",
       image: project1,
-      tags: ['React', 'TypeScript', 'Node.js', 'REST API'],
+      tags: ["React", "TypeScript", "Node.js", "REST API"],
     },
     {
       id: 2,
-      title: 'JavaScript for Beginners',
-      desc: 'Udemy course creator with over 500 active students, teaching programming fundamentals and logic.',
+      title: "Huellitas",
+      desc: "Este proyecto facilita la adopción de perritos rescatados, conectando a refugios y rescatistas con adoptantes responsables a través de una experiencia de usuario fluida y amorosa.",
       image: project2,
-      tags: ['Education', 'JavaScript', 'Logic'],
+      tags: ["Education", "JavaScript", "Logic"],
+      code: "https://github.com/carlosalberto05/perritos-refugio-frontend",
+      demo: "https://perritos-refugio-frontend.vercel.app/",
     },
     {
       id: 3,
-      title: 'Corporate Websites',
-      desc: 'Development of multiple professional landing pages and corporate sites using WordPress and Elementor.',
+      title: "Corporate Websites",
+      desc: "Development of multiple professional landing pages and corporate sites using WordPress and Elementor.",
       image: project3,
-      tags: ['WordPress', 'Elementor', 'Web Design'],
+      tags: ["WordPress", "Elementor", "Web Design"],
+      code: "https://github.com/carlosalberto05/perritos-refugio-frontend",
+      demo: "https://perritos-refugio-frontend.vercel.app/",
     },
     {
       id: 4,
-      title: 'No-Code Automations',
-      desc: 'Implementation of efficient workflows and integrations using Make (Integromat), Zapier, and APIs.',
+      title: "No-Code Automations",
+      desc: "Implementation of efficient workflows and integrations using Make (Integromat), Zapier, and APIs.",
       image: project4,
-      tags: ['Make', 'Zapier', 'APIs'],
+      tags: ["Make", "Zapier", "APIs"],
+      code: "https://github.com/carlosalberto05/perritos-refugio-frontend",
+      demo: "https://perritos-refugio-frontend.vercel.app/",
     },
     {
       id: 5,
-      title: 'Technology Workshops',
-      desc: 'Tutoring in digital literacy and Linux installation for underserved youth in Huesca, Spain.',
+      title: "Technology Workshops",
+      desc: "Tutoring in digital literacy and Linux installation for underserved youth in Huesca, Spain.",
       image: project5,
-      tags: ['Mentoring', 'Linux', 'Social Impact'],
+      tags: ["Mentoring", "Linux", "Social Impact"],
+      code: "https://github.com/carlosalberto05/perritos-refugio-frontend",
+      demo: "https://perritos-refugio-frontend.vercel.app/",
     },
     {
       id: 6,
-      title: 'Full Stack Content',
-      desc: '7-hour full-stack authentication tutorial that reached 5,000+ developers on YouTube.',
+      title: "Full Stack Content",
+      desc: "7-hour full-stack authentication tutorial that reached 5,000+ developers on YouTube.",
       image: project6,
-      tags: ['Content Creation', 'React', 'Full Stack'],
+      tags: ["Content Creation", "React", "Full Stack"],
+      code: "https://github.com/carlosalberto05/perritos-refugio-frontend",
+      demo: "https://perritos-refugio-frontend.vercel.app/",
     },
-  ]
+  ];
 
   return (
     <section
       id="projects"
-      style={{ backgroundColor: darkMode ? '#111827' : '#f9fafb' }}
+      style={{ backgroundColor: darkMode ? "#111827" : "#f9fafb" }}
       className="relative py-24"
     >
       <div className="container mx-auto px-4">
         <div className="text-center mb-10" data-aos="fade-up">
           <h2
             className="text-3xl sm:text-4xl font-bold mb-3"
-            style={{ color: darkMode ? 'white' : '#1f2937' }}
+            style={{ color: darkMode ? "white" : "#1f2937" }}
           >
-            My{' '}
+            My{" "}
             <span
               style={{
-                background: 'linear-gradient(to right, #f97316, #f59e0b)',
-                WebkitBackgroundClip: 'text',
-                backgroundClip: 'text',
-                color: 'transparent',
+                background: "linear-gradient(to right, #f97316, #f59e0b)",
+                WebkitBackgroundClip: "text",
+                backgroundClip: "text",
+                color: "transparent",
               }}
             >
               Projects
@@ -79,7 +89,7 @@ const Projects = ({ darkMode }) => {
 
           <p
             className="max-w-xl mx-auto"
-            style={{ color: darkMode ? '#d1d5db' : '#6b7280' }}
+            style={{ color: darkMode ? "#d1d5db" : "#6b7280" }}
           >
             A showcase of my recent work and high-impact contributions.
           </p>
@@ -91,9 +101,9 @@ const Projects = ({ darkMode }) => {
               key={project.id}
               style={{
                 background: darkMode
-                  ? 'linear-gradient(to right, #1f2937, #111827)'
-                  : 'linear-gradient(to right, #ffffff, #f9fafb)',
-                borderColor: darkMode ? '#374151' : 'e5e7eb',
+                  ? "linear-gradient(to right, #1f2937, #111827)"
+                  : "linear-gradient(to right, #ffffff, #f9fafb)",
+                borderColor: darkMode ? "#374151" : "e5e7eb",
               }}
               className="group rounded-xl border hover:border-orange-500/50 transition-all duration-300"
               data-aos="fade-up"
@@ -110,14 +120,14 @@ const Projects = ({ darkMode }) => {
               <div className="p-4">
                 <h3
                   className="text-lg font-bold mb-2"
-                  style={{ color: darkMode ? 'white' : '#1f2937' }}
+                  style={{ color: darkMode ? "white" : "#1f2937" }}
                 >
                   {project.title}
                 </h3>
 
                 <p
                   className="text-sm mb-3"
-                  style={{ color: darkMode ? '#d1d5db' : '#6b7280' }}
+                  style={{ color: darkMode ? "#d1d5db" : "#6b7280" }}
                 >
                   {project.desc}
                 </p>
@@ -127,8 +137,8 @@ const Projects = ({ darkMode }) => {
                     <span
                       key={idx}
                       style={{
-                        backgroundColor: darkMode ? '#374151' : '#f3f4f6',
-                        color: darkMode ? '#d1d5db' : '#4b5563',
+                        backgroundColor: darkMode ? "#374151" : "#f3f4f6",
+                        color: darkMode ? "#d1d5db" : "#4b5563",
                       }}
                       className="px-2 py-1 text-xs rounded-full"
                     >
@@ -139,10 +149,12 @@ const Projects = ({ darkMode }) => {
 
                 <div className="flex gap-2">
                   <a
-                    href="#"
+                    href={project.code}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     style={{
-                      backgroundColor: darkMode ? '#374151' : '#f3f4f6',
-                      color: darkMode ? 'white' : '#374151',
+                      backgroundColor: darkMode ? "#374151" : "#f3f4f6",
+                      color: darkMode ? "white" : "#374151",
                     }}
                     className="flex-1 flex items-center justify-center gap-1.5 px-3 py-2 text-sm rounded-lg hover:opacity-90 transition-colors"
                     data-aos="zoom-in"
@@ -153,10 +165,11 @@ const Projects = ({ darkMode }) => {
                   </a>
 
                   <a
-                    href="#"
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     style={{
-                      background:
-                        'linear-gradient(to right, #f97316, #f59e0b)',
+                      background: "linear-gradient(to right, #f97316, #f59e0b)",
                     }}
                     className="flex-1 flex items-center justify-center gap-1.5 px-3 py-2 text-white text-sm rounded-lg hover:shadow-lg hover:shadow-orange-500/25 transition-all"
                     data-aos="zoom-in"
@@ -175,7 +188,7 @@ const Projects = ({ darkMode }) => {
           <a
             href="#"
             style={{
-              background: 'linear-gradient(to right, #f97316, #f59e0b)',
+              background: "linear-gradient(to right, #f97316, #f59e0b)",
             }}
             className="inline-flex items-center gap-2 px-7 py-4 text-white text-sm font-semibold rounded-full hover:shadow-lg hover:shadow-orange-500/25 transition-all"
             data-aos="zoom-in"
@@ -188,7 +201,7 @@ const Projects = ({ darkMode }) => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;
