@@ -26,12 +26,12 @@ const Projects = ({ darkMode }) => {
     },
     {
       id: 3,
-      title: "Corporate Websites",
-      desc: "Development of multiple professional landing pages and corporate sites using WordPress and Elementor.",
+      title: "MellowDyne",
+      desc: "Mellowdyne is an e-commerce platform dedicated to selling vinyl records of various musical genres.",
       image: project3,
       tags: ["WordPress", "Elementor", "Web Design"],
-      code: "https://github.com/carlosalberto05/perritos-refugio-frontend",
-      demo: "https://perritos-refugio-frontend.vercel.app/",
+      code: "https://github.com/carlosalberto05/grupo_4_exitosos",
+      demo: "https://mellowdyne.onrender.com/",
     },
     {
       id: 4,
