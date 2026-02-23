@@ -87,7 +87,7 @@ const Hero = ({ darkMode }) => {
               data-aos="fade-up"
               data-aos-delay="500"
             >
-              Hi, I'm Carlos Alberto
+              Hi, I'm Carlos de Jesús Alberto Lira
             </h1>
 
             <p

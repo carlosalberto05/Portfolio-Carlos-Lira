@@ -59,7 +59,7 @@ const Footer = ({ darkMode }) => {
               <FaHeart className="text-red-500" />
               by
               <span className="mt-1 text-[#f97316]">
-                Carlos Alberto
+                Carlos de Jesús Alberto Lira
               </span>
             </p>
           </div>
