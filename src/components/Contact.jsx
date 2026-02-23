@@ -1,6 +1,38 @@
+import { useState } from 'react'
 import contactImg from '../assets/contact.png'
 
 const Contact = ({ darkMode }) => {
+  const [status, setStatus] = useState('') // '', 'sending', 'success', 'error'
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    setStatus('sending')
+
+    const form = e.target
+    const formData = new FormData(form)
+
+    try {
+      // AQUÍ: Reemplaza 'PROJECT_ID' por el ID que te den en Formspree (ej: https://formspree.io/f/mnjvojdq)
+      const response = await fetch('https://formspree.io/f/PROJECT_ID', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+
+      if (response.ok) {
+        setStatus('success')
+        form.reset()
+        setTimeout(() => setStatus(''), 5000)
+      } else {
+        setStatus('error')
+      }
+    } catch (error) {
+      setStatus('error')
+    }
+  }
+
   return (
     <section
       id="contact"
@@ -59,6 +91,7 @@ const Contact = ({ darkMode }) => {
 
           {/* Form */}
           <form
+            onSubmit={handleSubmit}
             style={{
               background: darkMode
                 ? 'linear-gradient(to right, #1f2937, #111827)'
@@ -71,6 +104,7 @@ const Contact = ({ darkMode }) => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-3 sm:mb-4">
               {/* First Name */}
               <input
+                name="firstName"
                 type="text"
                 placeholder="First Name"
                 style={{
@@ -84,6 +118,7 @@ const Contact = ({ darkMode }) => {
 
               {/* Last Name */}
               <input
+                name="lastName"
                 type="text"
                 placeholder="Last Name"
                 style={{
@@ -98,6 +133,7 @@ const Contact = ({ darkMode }) => {
 
             {/* Email */}
             <input
+              name="email"
               type="email"
               placeholder="Email Address"
               style={{
@@ -111,6 +147,7 @@ const Contact = ({ darkMode }) => {
 
             {/* Phone */}
             <input
+              name="phone"
               type="tel"
               placeholder="Phone Number"
               style={{
@@ -124,6 +161,7 @@ const Contact = ({ darkMode }) => {
 
             {/* Message */}
             <textarea
+              name="message"
               rows="4"
               placeholder="Your Message"
               style={{
@@ -137,13 +175,25 @@ const Contact = ({ darkMode }) => {
 
             <button
               type="submit"
+              disabled={status === 'sending'}
               style={{
                 background: 'linear-gradient(to right, #f97316, #f59e0b)',
               }}
-              className="w-full py-2 sm:py-3 text-white font-semibold rounded-lg text-sm sm:text-base hover:shadow-lg hover:shadow-orange-500/25 hover:scale-[1.02] transition-all"
+              className="w-full py-2 sm:py-3 text-white font-semibold rounded-lg text-sm sm:text-base hover:shadow-lg hover:shadow-orange-500/25 hover:scale-[1.02] transition-all disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              Send Message
+              {status === 'sending' ? 'Sending...' : 'Send Message'}
             </button>
+
+            {status === 'success' && (
+              <p className="mt-4 text-green-500 font-medium text-center animate-bounce">
+                Message sent successfully! I'll get back to you soon.
+              </p>
+            )}
+            {status === 'error' && (
+              <p className="mt-4 text-red-500 font-medium text-center">
+                There was an error sending your message. Please try again.
+              </p>
+            )}
           </form>
         </div>
       </div>

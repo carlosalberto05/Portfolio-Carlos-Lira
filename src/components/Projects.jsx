@@ -14,6 +14,7 @@ const Projects = ({ darkMode }) => {
       desc: "Frontend development for a platform serving over 16 million users. Critical bug resolution and performance optimization.",
       image: project1,
       tags: ["React", "TypeScript", "Node.js", "REST API"],
+      demo: "https://micuenta.infonavit.org.mx/",
     },
     {
       id: 2,
