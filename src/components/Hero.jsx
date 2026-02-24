@@ -31,20 +31,20 @@ const Hero = ({ darkMode }) => {
     textPrimary: "text-white",
     textSecondary: "text-gray-300",
     buttonSecondary: `
-      text-white border-2 border-orange-500 
-      hover:bg-orange-600
+      text-white border-2 border-brand-1 
+      hover:bg-brand-2
     `,
-    decorativeCircle: "bg-orange-500 opacity-10",
+    decorativeCircle: "bg-brand-1 opacity-10",
   };
 
   const lightTheme = {
     textPrimary: "text-gray-900",
     textSecondary: "text-gray-700",
     buttonSecondary: `
-      text-gray-800 border-2 border-orange-500 
-      hover:bg-orange-500 hover:text-white
+      text-gray-800 border-2 border-brand-1 
+      hover:bg-brand-1 hover:text-white
     `,
-    decorativeCircle: "bg-orange-400 opacity-20",
+    decorativeCircle: "bg-brand-2 opacity-20",
   };
 
   const theme = darkMode ? darkTheme : lightTheme;
@@ -113,7 +113,7 @@ const Hero = ({ darkMode }) => {
                   download="Carlos_Alberto_Lira_Software Engineer_Frontend_Developer_CV.pdf"
                   className="w-full sm:w-auto"
                 >
-                  <button className="w-full sm:w-auto inline-flex items-center justify-center text-white bg-linear-to-r from-orange-500 to-amber-500 border-0 py-3 px-6 sm:px-8 hover:shadow-[0_0_40px_rgb(255,165,0,0.7)] rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform">
+                  <button className="w-full sm:w-auto inline-flex items-center justify-center text-white bg-linear-to-r from-brand-1 to-brand-3 border-0 py-3 px-6 sm:px-8 hover:shadow-[0_0_40px_rgba(29,100,191,0.7)] rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform">
                     <DownloadIcon className="w-4 h-4 sm:h-5 sm:w-5 mr-2" />
                     Download CV
                   </button>
@@ -121,7 +121,7 @@ const Hero = ({ darkMode }) => {
 
                 <a href="#contact" className="w-full sm:w-auto">
                   <button
-                    className={`w-full sm:w-auto inline-flex items-center justify-center ${theme.buttonSecondary} border-0 py-3 px-6 sm:px-8 hover:shadow-[0_0_40px_rgb(255,165,0,0.7)] rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform`}
+                    className={`w-full sm:w-auto inline-flex items-center justify-center ${theme.buttonSecondary} border-0 py-3 px-6 sm:px-8 hover:shadow-[0_0_40px_rgba(29,100,191,0.7)] rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform`}
                   >
                     <Mail className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                     Contact Me

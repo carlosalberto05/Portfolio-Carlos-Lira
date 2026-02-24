@@ -25,7 +25,7 @@ const Skills = ({ darkMode }) => {
       name: 'JavaScript',
       icon: react, 
       level: 95,
-      color: 'from-yellow-400 to-orange-500',
+      color: 'from-brand-2 to-brand-1',
     },
     {
       name: 'Node.js',
@@ -76,7 +76,7 @@ const Skills = ({ darkMode }) => {
               <span
                 style={{
                   background:
-                    'linear-gradient(to right, #f97316, #f59e0b)',
+                    'linear-gradient(to right, #1d64bf, #20afd9)',
                   WebkitBackgroundClip: 'text',
                   backgroundClip: 'text',
                   color: 'transparent',
@@ -114,7 +114,7 @@ const Skills = ({ darkMode }) => {
                       : 'linear-gradient(to bottom right, #ffffff, #f3f4f6)',
                     borderColor: darkMode ? '#374151' : '#e5e7eb',
                   }}
-                  className="h-full p-6 rounded-2xl border hover:border-orange-500/50 transition-all duration-300 hover:-translate-y-2 group hover:shadow-[0_0_30px_rgb(255,165,0,0.15)]"
+                  className="h-full p-6 rounded-2xl border hover:border-brand-1/50 transition-all duration-300 hover:-translate-y-2 group hover:shadow-[0_0_30px_rgba(29,100,191,0.15)]"
                 >
                   <div className="flex items-center mb-6">
                     <div
@@ -152,13 +152,13 @@ const Skills = ({ darkMode }) => {
 
                     <span
                       className="font-bold"
-                      style={{
-                        background:
-                          'linear-gradient(to right, #f97316, #f59e0b)',
-                        WebkitBackgroundClip: 'text',
-                        backgroundClip: 'text',
-                        color: 'transparent',
-                      }}
+                        style={{
+                          background:
+                            'linear-gradient(to right, #1d64bf, #20afd9)',
+                          WebkitBackgroundClip: 'text',
+                          backgroundClip: 'text',
+                          color: 'transparent',
+                        }}
                     >
                       {skill.level}%
                     </span>
@@ -185,7 +185,7 @@ const Skills = ({ darkMode }) => {
                       className="h-1 rounded-full opacity-70 group-hover:w-full transition-all duration-500 w-1/3"
                       style={{
                         background:
-                          'linear-gradient(to right, #f97316, #f59e0b)',
+                          'linear-gradient(to right, #1d64bf, #20afd9)',
                       }}
                     />
                   </div>

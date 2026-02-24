@@ -12,8 +12,7 @@ const Contact = ({ darkMode }) => {
     const formData = new FormData(form)
 
     try {
-      // AQUÍ: Reemplaza 'PROJECT_ID' por el ID que te den en Formspree (ej: https://formspree.io/f/mnjvojdq)
-      const response = await fetch('https://formspree.io/f/PROJECT_ID', {
+      const response = await fetch('https://formspree.io/f/mojnyepd', {
         method: 'POST',
         body: formData,
         headers: {
@@ -56,7 +55,7 @@ const Contact = ({ darkMode }) => {
             Get In{' '}
             <span
               style={{
-                background: 'linear-gradient(to right, #f97316, #f59e0b)',
+                background: 'linear-gradient(to right, #1d64bf, #20afd9)',
                 WebkitBackgroundClip: 'text',
                 backgroundClip: 'text',
                 color: 'transparent',
@@ -108,11 +107,11 @@ const Contact = ({ darkMode }) => {
                 type="text"
                 placeholder="First Name"
                 style={{
-                  backgroundColor: darkMode ? '#374151' : '#faede3',
+                  backgroundColor: darkMode ? '#374151' : '#c6efed80',
                   borderColor: darkMode ? '#4b5563' : '#d1d5db',
                   color: darkMode ? 'white' : '#1f2937',
                 }}
-                className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg text-sm sm:text-base focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 transition-all"
+                className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg text-sm sm:text-base focus:border-brand-1 focus:ring-2 focus:ring-brand-1/20 transition-all"
                 required
               />
 
@@ -122,11 +121,11 @@ const Contact = ({ darkMode }) => {
                 type="text"
                 placeholder="Last Name"
                 style={{
-                  backgroundColor: darkMode ? '#374151' : '#faede3',
+                  backgroundColor: darkMode ? '#374151' : '#c6efed80',
                   borderColor: darkMode ? '#4b5563' : '#d1d5db',
                   color: darkMode ? 'white' : '#1f2937',
                 }}
-                className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg text-sm sm:text-base focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 transition-all"
+                className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg text-sm sm:text-base focus:border-brand-1 focus:ring-2 focus:ring-brand-1/20 transition-all"
                 required
               />
             </div>
@@ -137,11 +136,11 @@ const Contact = ({ darkMode }) => {
               type="email"
               placeholder="Email Address"
               style={{
-                backgroundColor: darkMode ? '#374151' : '#faede3',
+                backgroundColor: darkMode ? '#374151' : '#c6efed80',
                 borderColor: darkMode ? '#4b5563' : '#d1d5db',
                 color: darkMode ? 'white' : '#1f2937',
               }}
-              className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg text-sm sm:text-base focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 transition-all mb-3 sm:mb-4"
+              className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg text-sm sm:text-base focus:border-brand-1 focus:ring-2 focus:ring-brand-1/20 transition-all mb-3 sm:mb-4"
               required
             />
 
@@ -151,11 +150,11 @@ const Contact = ({ darkMode }) => {
               type="tel"
               placeholder="Phone Number"
               style={{
-                backgroundColor: darkMode ? '#374151' : '#faede3',
+                backgroundColor: darkMode ? '#374151' : '#c6efed80',
                 borderColor: darkMode ? '#4b5563' : '#d1d5db',
                 color: darkMode ? 'white' : '#1f2937',
               }}
-              className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg text-sm sm:text-base focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 transition-all mb-3 sm:mb-4"
+              className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg text-sm sm:text-base focus:border-brand-1 focus:ring-2 focus:ring-brand-1/20 transition-all mb-3 sm:mb-4"
               required
             />
 
@@ -165,11 +164,11 @@ const Contact = ({ darkMode }) => {
               rows="4"
               placeholder="Your Message"
               style={{
-                backgroundColor: darkMode ? '#374151' : '#faede3',
+                backgroundColor: darkMode ? '#374151' : '#c6efed80',
                 borderColor: darkMode ? '#4b5563' : '#d1d5db',
                 color: darkMode ? 'white' : '#1f2937',
               }}
-              className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg text-sm sm:text-base focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 transition-all mb-4 sm:mb-6 resize-none"
+              className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg text-sm sm:text-base focus:border-brand-1 focus:ring-2 focus:ring-brand-1/20 transition-all mb-4 sm:mb-6 resize-none"
               required
             />
 
@@ -177,9 +176,9 @@ const Contact = ({ darkMode }) => {
               type="submit"
               disabled={status === 'sending'}
               style={{
-                background: 'linear-gradient(to right, #f97316, #f59e0b)',
+                background: 'linear-gradient(to right, #1d64bf, #20afd9)',
               }}
-              className="w-full py-2 sm:py-3 text-white font-semibold rounded-lg text-sm sm:text-base hover:shadow-lg hover:shadow-orange-500/25 hover:scale-[1.02] transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full py-2 sm:py-3 text-white font-semibold rounded-lg text-sm sm:text-base hover:shadow-lg hover:shadow-brand-1/25 hover:scale-[1.02] transition-all disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {status === 'sending' ? 'Sending...' : 'Send Message'}
             </button>

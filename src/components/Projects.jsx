@@ -78,7 +78,7 @@ const Projects = ({ darkMode }) => {
             My{" "}
             <span
               style={{
-                background: "linear-gradient(to right, #f97316, #f59e0b)",
+                background: "linear-gradient(to right, #1d64bf, #20afd9)",
                 WebkitBackgroundClip: "text",
                 backgroundClip: "text",
                 color: "transparent",
@@ -106,7 +106,7 @@ const Projects = ({ darkMode }) => {
                   : "linear-gradient(to right, #ffffff, #f9fafb)",
                 borderColor: darkMode ? "#374151" : "e5e7eb",
               }}
-              className="group rounded-xl border hover:border-orange-500/50 transition-all duration-300"
+              className="group rounded-xl border hover:border-brand-1/50 transition-all duration-300"
               data-aos="fade-up"
               data-aos-delay={index * 100}
             >
@@ -170,9 +170,9 @@ const Projects = ({ darkMode }) => {
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{
-                      background: "linear-gradient(to right, #f97316, #f59e0b)",
+                      background: "linear-gradient(to right, #1d64bf, #20afd9)",
                     }}
-                    className="flex-1 flex items-center justify-center gap-1.5 px-3 py-2 text-white text-sm rounded-lg hover:shadow-lg hover:shadow-orange-500/25 transition-all"
+                    className="flex-1 flex items-center justify-center gap-1.5 px-3 py-2 text-white text-sm rounded-lg hover:shadow-lg hover:shadow-brand-1/25 transition-all"
                     data-aos="zoom-in"
                     data-aos-delay="400"
                   >
@@ -189,9 +189,9 @@ const Projects = ({ darkMode }) => {
           <a
             href="#"
             style={{
-              background: "linear-gradient(to right, #f97316, #f59e0b)",
+              background: "linear-gradient(to right, #1d64bf, #20afd9)",
             }}
-            className="inline-flex items-center gap-2 px-7 py-4 text-white text-sm font-semibold rounded-full hover:shadow-lg hover:shadow-orange-500/25 transition-all"
+            className="inline-flex items-center gap-2 px-7 py-4 text-white text-sm font-semibold rounded-full hover:shadow-lg hover:shadow-brand-1/25 transition-all"
             data-aos="zoom-in"
             data-aos-delay="400"
           >

@@ -14,7 +14,7 @@ const About = ({ darkMode }) => {
         >
           <div className="relative w-75 h-75 lg:w-96 lg:h-96">
             <div
-              className="absolute -inset-6 lg:-inset-20 bg-linear-to-l from-[#f97316] via-[#fb923c] to-[#f59e0b] rotate-12 star-shape z-0"
+              className="absolute -inset-6 lg:-inset-20 bg-linear-to-l from-brand-1 via-brand-2 to-brand-3 rotate-12 star-shape z-0"
               data-aos="zoom-in"
               data-aos-delay="600"
             />
@@ -36,7 +36,7 @@ const About = ({ darkMode }) => {
         >
           <header>
             <h1
-              className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 text-transparent bg-linear-to-r from-orange-400 to-orange-600 bg-clip-text"
+              className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 text-transparent bg-linear-to-r from-brand-2 to-brand-1 bg-clip-text"
               data-aos="fade-up"
               data-aos-delay="400"
             >
@@ -45,7 +45,7 @@ const About = ({ darkMode }) => {
           </header>
 
           <p
-            className={`text-sm sm:text-base lg:text-lg xl:text-xl mb-6 sm:mb-8 leading-relaxed bg-linear-to-r from-orange-900/10 to-orange-900/5 p-4 sm:p-6 rounded-xl sm:rounded-2xl backdrop-blur-sm ${
+            className={`text-sm sm:text-base lg:text-lg xl:text-xl mb-6 sm:mb-8 leading-relaxed bg-linear-to-r from-brand-1/10 to-brand-2/5 p-4 sm:p-6 rounded-xl sm:rounded-2xl backdrop-blur-sm ${
               darkMode ? "text-gray-300" : "text-gray-700"
             }`}
             data-aos="fade-up"
@@ -64,7 +64,7 @@ const About = ({ darkMode }) => {
               data-aos="zoom-in"
               data-aos-delay="600"
             >
-              <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-orange-400">
+              <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-brand-2">
                 IPN
               </div>
               <div
@@ -81,7 +81,7 @@ const About = ({ darkMode }) => {
               data-aos="zoom-in"
               data-aos-delay="650"
             >
-              <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-orange-400">
+              <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-brand-2">
                 3+
               </div>
               <div
@@ -98,7 +98,7 @@ const About = ({ darkMode }) => {
               data-aos="zoom-in"
               data-aos-delay="700"
             >
-              <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-orange-400">
+              <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-brand-2">
                 5k+
               </div>
               <div
@@ -112,9 +112,9 @@ const About = ({ darkMode }) => {
           </div>
 
           <button
-            className={`w-full sm:w-auto border-2 border-orange-500 inline-flex items-center justify-center py-2 px-4 sm:px-6 hover:shadow-[0_0_40px_rgb(255,165,0,0.7)] rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform ${
+            className={`w-full sm:w-auto border-2 border-brand-1 inline-flex items-center justify-center py-2 px-4 sm:px-6 hover:shadow-[0_0_40px_rgba(29,100,191,0.7)] rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform ${
               darkMode
-                ? "text-white bg-orange-500/10"
+                ? "text-white bg-brand-1/10"
                 : "text-gray-800 bg-white/90"
             }`}
             data-aos="fade-up"

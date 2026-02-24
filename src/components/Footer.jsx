@@ -17,7 +17,7 @@ const Footer = ({ darkMode }) => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           {/* Brand */}
           <div className="text-center md:text-left">
-            <h3 className="text-2xl font-bold mb-2 text-orange-500 dark:text-white">
+            <h3 className="text-2xl font-bold mb-2 text-brand-1 dark:text-white">
               Portfolio
             </h3>
 
@@ -37,7 +37,7 @@ const Footer = ({ darkMode }) => {
               href="https://github.com/carlosalberto05"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full flex items-center justify-center hover:scale-110 transition-all hover:bg-linear-to-r hover:from-orange-500 hover:to-amber-500 hover:text-white bg-[#374151] dark:bg-[#f3f4f6] text-white dark:text-[#374151]"
+              className="w-10 h-10 rounded-full flex items-center justify-center hover:scale-110 transition-all hover:bg-linear-to-r hover:from-brand-1 hover:to-brand-3 hover:text-white bg-[#374151] dark:bg-[#f3f4f6] text-white dark:text-[#374151]"
             >
               <FaGithub />
             </a>
@@ -46,7 +46,7 @@ const Footer = ({ darkMode }) => {
               href="https://linkedin.com/in/carlos-alberto-lira"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full flex items-center justify-center hover:scale-110 transition-all hover:bg-linear-to-r hover:from-orange-500 hover:to-amber-500 hover:text-white bg-[#374151] dark:bg-[#f3f4f6] text-white dark:text-[#374151]"
+              className="w-10 h-10 rounded-full flex items-center justify-center hover:scale-110 transition-all hover:bg-linear-to-r hover:from-brand-1 hover:to-brand-3 hover:text-white bg-[#374151] dark:bg-[#f3f4f6] text-white dark:text-[#374151]"
             >
               <FaLinkedin />
             </a>
@@ -58,7 +58,7 @@ const Footer = ({ darkMode }) => {
               © {currentYear} Made with
               <FaHeart className="text-red-500" />
               by
-              <span className="mt-1 text-[#f97316]">
+              <span className="mt-1 text-brand-1">
                 Carlos de Jesús Alberto Lira
               </span>
             </p>

@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@theme {
+  --color-brand-1: #1d64bf;
+  --color-brand-2: #1f87ce;
+  --color-brand-3: #20afd9;
+  --color-brand-4: #55dedf;
+  --color-brand-5: #c6efed;
+}
+
 @custom-variant dark (&:where(.dark, .dark *));
 
 body {
