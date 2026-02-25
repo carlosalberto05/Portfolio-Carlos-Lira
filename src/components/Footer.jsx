@@ -53,12 +53,10 @@ const Footer = ({ darkMode }) => {
           </div>
 
           {/* Copyright */}
-          <div className="text-center md:text-right">
+          <div className="text-center md:text-right justify-center align-center">
             <p className="text-sm flex items-center justify-end gap-1 text-[#6b7280] dark:text-[#9ca3af]">
-              © {currentYear} Made with
-              <FaHeart className="text-red-500" />
-              by
-              <span className="mt-1 text-brand-1">
+              © {currentYear} Made with by
+              <span className="mt-1 text-brand-1 justify-center align-center">
                 Carlos de Jesús Alberto Lira
               </span>
             </p>

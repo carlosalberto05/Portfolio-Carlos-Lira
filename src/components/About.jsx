@@ -51,11 +51,7 @@ const About = ({ darkMode }) => {
             data-aos="fade-up"
             data-aos-delay="500"
           >
-            Self-taught and oriented to solving real-world problems. I have a
-            unique background in Communications and Electronics Engineering
-            (IPN), which gives me a strong foundation in systems thinking. I
-            have contributed to large-scale platforms like "Mi Cuenta
-            Infonavit", impacting over 16 million users.
+            Frontend Engineer with 3+ years of experience contributing to production systems in the JavaScript ecosystem. I’ve worked on large-scale platforms like “Mi Cuenta Infonavit”, serving over 16 million users. My background in Communications and Electronics Engineering (IPN) strengthens my systems thinking and structured problem-solving approach.
           </p>
 
           <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 lg:gap-8 mb-6 sm:mb-8">

@@ -1,5 +1,6 @@
 import instagram from "../assets/instagram.png";
 import tiktok from "../assets/tiktok.png";
+import linkedin from "../assets/linkedin.png";
 import github from "../assets/github.png";
 import youtube from "../assets/youtube.png";
 import hero from "../assets/hero.png";
@@ -10,16 +11,17 @@ import { DownloadIcon, Mail } from "lucide-react";
 const Hero = ({ darkMode }) => {
   const socialIcons = [
     { icon: github, alt: "github", link: "https://github.com/carlosalberto05" },
-    {
-      icon: instagram,
-      alt: "Instagram",
-      link: "https://www.instagram.com/carlos_alberto_lir/",
-    },
-    {
-      icon: tiktok,
-      alt: "tiktok",
-      link: "https://www.tiktok.com/@carlos.alberto.lir",
-    },
+    { icon: linkedin, alt: "linkedin", link: "https://www.linkedin.com/in/carlos-alberto-lira/" },
+    // {
+    //   icon: instagram,
+    //   alt: "Instagram",
+    //   link: "https://www.instagram.com/carlos_alberto_lir/",
+    // },
+    // {
+    //   icon: tiktok,
+    //   alt: "tiktok",
+    //   link: "https://www.tiktok.com/@carlos.alberto.lir",
+    // },
     {
       icon: youtube,
       alt: "youtube",
@@ -95,10 +97,9 @@ const Hero = ({ darkMode }) => {
               data-aos="fade-up"
               data-aos-dela="600"
             >
-              I'm a Full Stack Developer with over 3 years of hands-on
-              experience in the JavaScript ecosystem. I specialize in building
-              clear interfaces, solid performance, and applications that scale
-              securely for millions of users.
+              Frontend Engineer with 3+ years of experience building production-grade web applications. 
+              I’ve contributed to large-scale platforms serving 16M+ users, focusing on scalable architecture, 
+              performance, and clean frontend systems.
             </p>
 
             {/* Buttons */}
