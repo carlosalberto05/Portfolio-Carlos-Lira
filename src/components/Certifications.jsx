@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Award, ExternalLink } from 'lucide-react';
+import { Award, Cloud, ExternalLink } from 'lucide-react';
 import googleCloudBadge from '../assets/google-cloud-computing-foundations-certificate.png';
 
 const Certifications = ({ darkMode }) => {
@@ -12,7 +12,22 @@ const Certifications = ({ darkMode }) => {
       link: "https://www.credly.com/badges/ee35ba5e-04d5-4f04-aa8d-4674a9ace5ac",
       date: "Feb 2026"
     },
-    // More can be added here in the future
+    {
+      id: 2,
+      title: "AWS Certified Cloud Practitioner",
+      issuer: "Amazon Web Services",
+      icon: "cloud",
+      link: "https://www.credly.com/users/carlos-de-jesus-alberto-lira/badges",
+      date: "2026"
+    },
+    {
+      id: 3,
+      title: "Certified Scrum Fundamentals (CSF)",
+      issuer: "ScrumStudy",
+      icon: "award",
+      link: "https://www.scrumstudy.com/",
+      date: "2022"
+    },
   ];
 
   const containerVariants = {
@@ -78,11 +93,23 @@ const Certifications = ({ darkMode }) => {
                 <div className="flex flex-col items-center text-center">
                   <div className="relative mb-6">
                     <div className="absolute inset-0 bg-brand-1/20 blur-2xl rounded-full scale-0 group-hover:scale-100 transition-transform duration-500" />
-                    <img
-                      src={cert.image}
-                      alt={cert.title}
-                      className="relative w-28 h-28 md:w-32 md:h-32 object-contain drop-shadow-lg transition-transform duration-500 group-hover:scale-110"
-                    />
+                    {cert.image ? (
+                      <img
+                        src={cert.image}
+                        alt={cert.title}
+                        className="relative w-28 h-28 md:w-32 md:h-32 object-contain drop-shadow-lg transition-transform duration-500 group-hover:scale-110"
+                      />
+                    ) : (
+                      <div
+                        className={`relative w-24 h-24 md:w-28 md:h-28 rounded-full flex items-center justify-center transition-transform duration-500 group-hover:scale-110 ${
+                          darkMode
+                            ? 'bg-gray-700/60 text-brand-3'
+                            : 'bg-white text-brand-1 border border-gray-200 shadow-sm'
+                        }`}
+                      >
+                        {cert.icon === 'cloud' ? <Cloud size={44} /> : <Award size={44} />}
+                      </div>
+                    )}
                   </div>
                   
                   <h3 className="text-base md:text-lg font-bold mb-2 text-gray-900 dark:text-white leading-tight">

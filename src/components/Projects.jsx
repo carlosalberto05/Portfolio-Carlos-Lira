@@ -10,44 +10,53 @@ const Projects = ({ darkMode }) => {
   const projects = [
     {
       id: 1,
-      title: "Mi Cuenta Infonavit",
-      desc: "Frontend development for a platform serving over 16 million users. Critical bug resolution and performance optimization.",
-      image: project1,
-      tags: ["React", "TypeScript", "Node.js", "REST API"],
+      title: "Turnia Health",
+      desc: "Full-stack dental appointment SaaS taken from concept to a working production environment. AWS infrastructure with WhatsApp Business Cloud API integration for real-time booking flows.",
+      image: project6,
+      tags: ["Django", "React", "AWS", "WhatsApp Business API"],
       code: "",
-      demo: "https://micuenta.infonavit.org.mx/",
+      demo: "",
     },
     {
       id: 2,
-      title: "Huellitas",
-      desc: "This project facilitates the adoption of rescued dogs, connecting shelters and rescuers with responsible adopters through a fluid and loving user experience.",
-      image: project2,
-      tags: ["Education", "JavaScript", "Logic"],
-      code: "https://github.com/carlosalberto05/perritos-refugio-frontend",
-      demo: "https://perritos-refugio-frontend.vercel.app/",
-    },
-    {
-      id: 3,
       title: "Potencial de Cambio",
-      desc: "Scientific coach application that uses AI to generate personalized multisensory visualizations based on the user's psychological profile.",
+      desc: "AI-powered personal development platform combining personalized content generation, guided audio experiences, authentication, analytics, and subscriptions.",
       image: project3,
-      tags: ["Next.js", "TypeScript", "Tailwind CSS", "Zustand"],
+      tags: ["Next.js", "NestJS", "PostgreSQL", "Gemini", "Stripe"],
       code: "https://github.com/carlosalberto05/potencial-de-cambio-frontend.git",
       demo: "https://potencial-de-cambio-frontend.vercel.app/",
     },
     {
+      id: 3,
+      title: "Huellitas",
+      desc: "Full-stack pet adoption platform connecting shelters and rescuers with responsible adopters. Modular architecture, strict TypeScript, authenticated CRUD workflows, and CI/CD.",
+      image: project2,
+      tags: ["Next.js", "TypeScript", "Node.js", "PostgreSQL", "Prisma", "Supabase"],
+      code: "https://github.com/carlosalberto05/perritos-refugio-frontend",
+      demo: "https://perritos-refugio-frontend.vercel.app/",
+    },
+    {
       id: 4,
+      title: "Mi Cuenta Infonavit",
+      desc: "Frontend development for a platform serving over 16 million users. Critical production incident resolution and performance optimization.",
+      image: project1,
+      tags: ["React", "TypeScript", "REST API"],
+      code: "",
+      demo: "https://micuenta.infonavit.org.mx/",
+    },
+    {
+      id: 5,
       title: "MellowDyne",
-      desc: "Mellowdyne is an e-commerce platform dedicated to selling vinyl records of various musical genres.",
+      desc: "E-commerce platform dedicated to selling vinyl records of various musical genres with a polished catalog experience.",
       image: project4,
       tags: ["WordPress", "Elementor", "Web Design"],
       code: "https://github.com/carlosalberto05/grupo_4_exitosos",
       demo: "https://mellowdyne.onrender.com/",
     },
     {
-      id: 5,
+      id: 6,
       title: "Raftec App",
-      desc: "It is a mobile application designed to transform the hospitalization and treatment experience of children with cancer.",
+      desc: "Mobile application designed to transform the hospitalization and treatment experience of children with cancer.",
       image: project5,
       tags: ["React Native", "Expo", "Social Impact"],
       code: "https://github.com/carlosalberto05/raftec.git",
@@ -141,36 +150,50 @@ const Projects = ({ darkMode }) => {
                 </div>
 
                 <div className="flex gap-2">
-                  <a
-                    href={project.code}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{
-                      backgroundColor: darkMode ? "#374151" : "#f3f4f6",
-                      color: darkMode ? "white" : "#374151",
-                    }}
-                    className="flex-1 flex items-center justify-center gap-1.5 px-3 py-2 text-sm rounded-lg hover:opacity-90 transition-colors"
-                    data-aos="zoom-in"
-                    data-aos-delay="300"
-                  >
-                    <FaGithub className="text-sm" />
-                    <span>Code</span>
-                  </a>
+                  {project.code ? (
+                    <a
+                      href={project.code}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        backgroundColor: darkMode ? "#374151" : "#f3f4f6",
+                        color: darkMode ? "white" : "#374151",
+                      }}
+                      className="flex-1 flex items-center justify-center gap-1.5 px-3 py-2 text-sm rounded-lg hover:opacity-90 transition-colors"
+                      data-aos="zoom-in"
+                      data-aos-delay="300"
+                    >
+                      <FaGithub className="text-sm" />
+                      <span>Code</span>
+                    </a>
+                  ) : (
+                    <span
+                      style={{
+                        backgroundColor: darkMode ? "#1f2937" : "#f3f4f6",
+                        color: darkMode ? "#9ca3af" : "#9ca3af",
+                      }}
+                      className="flex-1 flex items-center justify-center gap-1.5 px-3 py-2 text-sm rounded-lg italic"
+                    >
+                      Private Code
+                    </span>
+                  )}
 
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{
-                      background: "linear-gradient(to right, #1d64bf, #20afd9)",
-                    }}
-                    className="flex-1 flex items-center justify-center gap-1.5 px-3 py-2 text-white text-sm rounded-lg hover:shadow-lg hover:shadow-brand-1/25 transition-all"
-                    data-aos="zoom-in"
-                    data-aos-delay="400"
-                  >
-                    <FaExternalLinkAlt className="text-sm" />
-                    <span>Demo</span>
-                  </a>
+                  {project.demo && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        background: "linear-gradient(to right, #1d64bf, #20afd9)",
+                      }}
+                      className="flex-1 flex items-center justify-center gap-1.5 px-3 py-2 text-white text-sm rounded-lg hover:shadow-lg hover:shadow-brand-1/25 transition-all"
+                      data-aos="zoom-in"
+                      data-aos-delay="400"
+                    >
+                      <FaExternalLinkAlt className="text-sm" />
+                      <span>Demo</span>
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
@@ -179,7 +202,9 @@ const Projects = ({ darkMode }) => {
 
         <div className="text-center mt-10">
           <a
-            href="#"
+            href="https://github.com/carlosalberto05"
+            target="_blank"
+            rel="noopener noreferrer"
             style={{
               background: "linear-gradient(to right, #1d64bf, #20afd9)",
             }}

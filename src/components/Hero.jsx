@@ -1,5 +1,3 @@
-import instagram from "../assets/instagram.png";
-import tiktok from "../assets/tiktok.png";
 import linkedin from "../assets/linkedin.png";
 import github from "../assets/github.png";
 import youtube from "../assets/youtube.png";
@@ -11,7 +9,7 @@ import { DownloadIcon, Mail } from "lucide-react";
 const Hero = ({ darkMode }) => {
   const socialIcons = [
     { icon: github, alt: "github", link: "https://github.com/carlosalberto05" },
-    { icon: linkedin, alt: "linkedin", link: "https://www.linkedin.com/in/carlos-alberto-lira/" },
+    { icon: linkedin, alt: "linkedin", link: "https://www.linkedin.com/in/carlos-de-jesus-alberto-lira" },
     // {
     //   icon: instagram,
     //   alt: "Instagram",
@@ -89,17 +87,25 @@ const Hero = ({ darkMode }) => {
               data-aos="fade-up"
               data-aos-delay="500"
             >
-              Hi, I'm Carlos de Jesús Alberto Lira
+              Hi, I'm Carlos Alberto Lira
             </h1>
+
+            <p
+              className={`mb-2 leading-relaxed max-w-md sm:max-w-lg font-semibold text-brand-2 ${theme.textSecondary}`}
+              data-aos="fade-up"
+              data-aos-dela="600"
+            >
+              Product Engineer | AI-Augmented Builder
+            </p>
 
             <p
               className={`mb-6 sm:mb-8 leading-relaxed max-w-md sm:max-w-lg ${theme.textSecondary}`}
               data-aos="fade-up"
               data-aos-dela="600"
             >
-              Frontend Engineer with 3+ years of experience building production-grade web applications. 
-              I’ve contributed to large-scale platforms serving 16M+ users, focusing on scalable architecture, 
-              performance, and clean frontend systems.
+              I build digital products from idea to production — frontend, backend, APIs, cloud, and
+              third-party integrations. 4+ years of experience shipping full-stack products with
+              React, Next.js, Django, NestJS, and AWS, powered by AI-assisted development.
             </p>
 
             {/* Buttons */}

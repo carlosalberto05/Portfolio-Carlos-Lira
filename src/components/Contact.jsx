@@ -1,8 +1,30 @@
 import { useState } from 'react'
-import contactImg from '../assets/contact.png'
+import { Mail, MapPin, Phone } from 'lucide-react'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
 const Contact = ({ darkMode }) => {
   const [status, setStatus] = useState('') // '', 'sending', 'success', 'error'
+
+  const contactInfo = [
+    {
+      icon: Mail,
+      label: "Email",
+      value: "carlos_alberto-lira@outlook.com",
+      href: "mailto:carlos_alberto-lira@outlook.com",
+    },
+    {
+      icon: Phone,
+      label: "Phone",
+      value: "+52 552 179 5946",
+      href: "tel:+525521795946",
+    },
+    {
+      icon: MapPin,
+      label: "Location",
+      value: "Mexico",
+      href: "",
+    },
+  ]
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -27,7 +49,7 @@ const Contact = ({ darkMode }) => {
       } else {
         setStatus('error')
       }
-    } catch (error) {
+    } catch {
       setStatus('error')
     }
   }
@@ -75,17 +97,85 @@ const Contact = ({ darkMode }) => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 items-center">
-          {/* Image */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 items-start">
+          {/* Contact Info */}
           <div
-            className="flex justify-center order-2 lg:order-1"
+            className="flex flex-col gap-4 order-1 lg:order-1"
             data-aos="fade-right"
           >
-            <img
-              src={contactImg}
-              alt="Contact"
-              className="w-full max-w-xs sm:max-w-sm lg:max-w-md h-auto object-contain"
-            />
+            {contactInfo.map((item, index) => (
+              <div
+                key={index}
+                style={{
+                  background: darkMode
+                    ? 'linear-gradient(to right, #1f2937, #111827)'
+                    : 'linear-gradient(to right, #ffffff, #f9fafb)',
+                  borderColor: darkMode ? '#374151' : '#e5e7eb',
+                }}
+                className="flex items-center gap-4 rounded-xl border p-4 sm:p-5 shadow-md hover:shadow-lg hover:shadow-brand-1/10 transition-all"
+              >
+                <div
+                  className={`p-3 rounded-full shrink-0 ${
+                    darkMode
+                      ? 'bg-brand-1/15 text-brand-3'
+                      : 'bg-brand-1/10 text-brand-1'
+                  }`}
+                >
+                  <item.icon size={22} />
+                </div>
+                <div className="min-w-0">
+                  <p
+                    className="text-xs font-semibold uppercase tracking-wide mb-0.5"
+                    style={{ color: darkMode ? '#9ca3af' : '#6b7280' }}
+                  >
+                    {item.label}
+                  </p>
+                  {item.href ? (
+                    <a
+                      href={item.href}
+                      className="text-sm sm:text-base font-medium break-all hover:text-brand-1 dark:hover:text-brand-3 transition-colors"
+                      style={{ color: darkMode ? 'white' : '#1f2937' }}
+                    >
+                      {item.value}
+                    </a>
+                  ) : (
+                    <p
+                      className="text-sm sm:text-base font-medium"
+                      style={{ color: darkMode ? 'white' : '#1f2937' }}
+                    >
+                      {item.value}
+                    </p>
+                  )}
+                </div>
+              </div>
+            ))}
+
+            <div className="flex gap-3">
+              <a
+                href="https://www.linkedin.com/in/carlos-de-jesus-alberto-lira"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`flex-1 flex items-center justify-center gap-2 rounded-xl border py-3 text-sm font-semibold transition-all hover:scale-[1.02] ${
+                  darkMode
+                    ? 'bg-gray-800 border-gray-700 text-white hover:border-brand-1/50'
+                    : 'bg-white border-gray-200 text-gray-700 hover:border-brand-1/50 shadow-md'
+                }`}
+              >
+                <FaLinkedin /> LinkedIn
+              </a>
+              <a
+                href="https://github.com/carlosalberto05"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`flex-1 flex items-center justify-center gap-2 rounded-xl border py-3 text-sm font-semibold transition-all hover:scale-[1.02] ${
+                  darkMode
+                    ? 'bg-gray-800 border-gray-700 text-white hover:border-brand-1/50'
+                    : 'bg-white border-gray-200 text-gray-700 hover:border-brand-1/50 shadow-md'
+                }`}
+              >
+                <FaGithub /> GitHub
+              </a>
+            </div>
           </div>
 
           {/* Form */}

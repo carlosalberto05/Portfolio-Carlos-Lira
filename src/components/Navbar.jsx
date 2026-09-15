@@ -9,6 +9,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
   const navItems = [
     { name: 'Home', link: '#home' },
     { name: 'About', link: '#about' },
+    { name: 'Experience', link: '#experience' },
     { name: 'Projects', link: '#projects' },
     { name: 'Skills', link: '#skills' },
     { name: 'Certifications', link: '#certifications' },
@@ -50,7 +51,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
         transition={{ duration: 0.5 }}
         className={`flex items-center justify-center ${colors.navBg} backdrop-blur-lg rounded-2xl px-4 lg:px-8 py-2 shadow-lg`}
       >
-        <div className="flex items-center justify-between w-full space-x-6 lg:space-x-8">
+        <div className="flex items-center justify-between w-full space-x-6 lg:space-x-6 xl:space-x-8">
           {/* Logo */}
           <motion.a
             href="/"
@@ -63,7 +64,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
           </motion.a>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-6">
+          <div className="hidden lg:flex items-center space-x-4 xl:space-x-6">
             {navItems.map((item) => (
               <a
                 key={item.name}

@@ -7,8 +7,8 @@ const Footer = ({ darkMode }) => {
     <footer
       style={{
         background: darkMode
-          ? 'linear-linear(to bottom, #000000, #111827)'
-          : 'linear-linear(to bottom, #f3f4f6, #e5e7eb)',
+          ? 'linear-gradient(to bottom, #000000, #111827)'
+          : 'linear-gradient(to bottom, #f3f4f6, #e5e7eb)',
         borderColor: darkMode ? '#374151' : '#d1d5db',
       }}
       className="border-t"
@@ -27,7 +27,7 @@ const Footer = ({ darkMode }) => {
                 color: darkMode ? '#9ca3af' : '#6b7280',
               }}
             >
-              Full Stack Developer & UI/UX Designer
+              Product Engineer & AI-Augmented Builder
             </p>
           </div>
 
@@ -43,7 +43,7 @@ const Footer = ({ darkMode }) => {
             </a>
 
             <a
-              href="https://linkedin.com/in/carlos-alberto-lira"
+              href="https://linkedin.com/in/carlos-de-jesus-alberto-lira"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 rounded-full flex items-center justify-center hover:scale-110 transition-all hover:bg-linear-to-r hover:from-brand-1 hover:to-brand-3 hover:text-white bg-[#374151] dark:bg-[#f3f4f6] text-white dark:text-[#374151]"
@@ -55,9 +55,11 @@ const Footer = ({ darkMode }) => {
           {/* Copyright */}
           <div className="text-center md:text-right justify-center align-center">
             <p className="text-sm flex items-center justify-end gap-1 text-[#6b7280] dark:text-[#9ca3af]">
-              © {currentYear} Made with by
-              <span className="mt-1 text-brand-1 justify-center align-center">
-                Carlos de Jesús Alberto Lira
+              © {currentYear} Made with
+              <FaHeart className="text-brand-1 mt-0.5" size={14} />
+              by
+              <span className="font-semibold text-brand-1 justify-center align-center">
+                Carlos Alberto Lira
               </span>
             </p>
           </div>

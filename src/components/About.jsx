@@ -21,7 +21,7 @@ const About = ({ darkMode }) => {
 
             <img
               src={about}
-              alt="Abouy Image"
+              alt="About Image"
               className="absolute inset-0 w-full h-full object-cover z-10 transition-all duration-300"
               data-aos="zoom-in"
               data-aos-dealy="400"
@@ -51,7 +51,11 @@ const About = ({ darkMode }) => {
             data-aos="fade-up"
             data-aos-delay="500"
           >
-            Frontend Engineer with 3+ years of experience contributing to production systems in the JavaScript ecosystem. I’ve worked on large-scale platforms like “Mi Cuenta Infonavit”, serving over 16 million users. My background in Communications and Electronics Engineering (IPN) strengthens my systems thinking and structured problem-solving approach.
+            Product Engineer and AI-Augmented Builder with 4+ years of experience taking ideas from
+            concept to deployment. I work end-to-end across frontend, backend, APIs, databases, cloud
+            infrastructure, and third-party integrations — and I use AI-assisted development tools to
+            accelerate research, implementation, debugging, and testing while staying accountable for
+            the technical decisions. AWS Certified Cloud Practitioner.
           </p>
 
           <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 lg:gap-8 mb-6 sm:mb-8">
@@ -61,24 +65,7 @@ const About = ({ darkMode }) => {
               data-aos-delay="600"
             >
               <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-brand-2">
-                IPN
-              </div>
-              <div
-                className={`text-xs sm:text-sm lg:text-base ${
-                  darkMode ? "text-gray-300" : "text-gray-600"
-                }`}
-              >
-                Education
-              </div>
-            </div>
-
-            <div
-              className="text-center"
-              data-aos="zoom-in"
-              data-aos-delay="650"
-            >
-              <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-brand-2">
-                3+
+                4+
               </div>
               <div
                 className={`text-xs sm:text-sm lg:text-base ${
@@ -92,32 +79,51 @@ const About = ({ darkMode }) => {
             <div
               className="text-center"
               data-aos="zoom-in"
-              data-aos-delay="700"
+              data-aos-delay="650"
             >
               <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-brand-2">
-                5k+
+                16M+
               </div>
               <div
                 className={`text-xs sm:text-sm lg:text-base ${
                   darkMode ? "text-gray-300" : "text-gray-600"
                 }`}
               >
-                Students
+                Users Served
+              </div>
+            </div>
+
+            <div
+              className="text-center"
+              data-aos="zoom-in"
+              data-aos-delay="700"
+            >
+              <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-brand-2">
+                5+
+              </div>
+              <div
+                className={`text-xs sm:text-sm lg:text-base ${
+                  darkMode ? "text-gray-300" : "text-gray-600"
+                }`}
+              >
+                Products Shipped
               </div>
             </div>
           </div>
 
-          <button
-            className={`w-full sm:w-auto border-2 border-brand-1 inline-flex items-center justify-center py-2 px-4 sm:px-6 hover:shadow-[0_0_40px_rgba(29,100,191,0.7)] rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform ${
-              darkMode
-                ? "text-white bg-brand-1/10"
-                : "text-gray-800 bg-white/90"
-            }`}
-            data-aos="fade-up"
-            data-aos-delay="800"
-          >
-            Learn More
-          </button>
+          <a href="#experience">
+            <button
+              className={`w-full sm:w-auto border-2 border-brand-1 inline-flex items-center justify-center py-2 px-4 sm:px-6 hover:shadow-[0_0_40px_rgba(29,100,191,0.7)] rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform ${
+                darkMode
+                  ? "text-white bg-brand-1/10"
+                  : "text-gray-800 bg-white/90"
+              }`}
+              data-aos="fade-up"
+              data-aos-delay="800"
+            >
+              My Experience
+            </button>
+          </a>
         </article>
       </div>
     </section>
